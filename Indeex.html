@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fortnite Helper</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Fortnite Helper</h1>
+    <a href="https://www.epicgames.com/id/authorize?client_id=YOUR_CLIENT_ID&response_type=code&redirect_uri=https://YOUR_SERVER_DOMAIN/callback">
+      <button class="blue">Login with Epic Games</button>
+    </a>
+    <br /><br />
+
+    <label for="itemName">Item Name:</label><br />
+    <input type="text" id="itemName" placeholder="Enter item name..." /><br />
+
+    <label for="itemType">Item Type:</label><br />
+    <select id="itemType">
+      <option value="skin">Skin</option>
+      <option value="emote">Emote</option>
+      <option value="pickaxe">Pickaxe</option>
+      <option value="backbling">Back Bling</option>
+      <option value="glider">Glider</option>
+      <option value="wrap">Wrap</option>
+      <option value="loading">Loading Screen</option>
+      <option value="music">Music</option>
+      <option value="contrail">Contrail</option>
+      <option value="spray">Spray</option>
+      <option value="emoji">Emoji</option>
+      <option value="banner">Banner</option>
+      <option value="bundle">Bundle</option>
+    </select><br /><br />
+
+    <button onclick="addItem()">Add Item</button>
+    <hr />
+    <button class="blue" onclick="addSeason('2-6')">Add Season 2-6 Battle Pass</button>
+    <button class="purple" onclick="addSeason('7-10')">Add Season 7-10 Battle Pass</button>
+    <button class="green" onclick="addChallenges()">Add All Challenges (S1-S10)</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
